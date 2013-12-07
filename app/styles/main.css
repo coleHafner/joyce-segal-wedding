@@ -1,22 +1,66 @@
-body {
+html, body {
+    /* any div up to fullscreen-cont must have this
+    in this case html and body */
+
+    margin:0;
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
+	background: url(http://www.pentaxforums.com/forums/members/61172-wyndstryder/albums/7000-noir-et-blanc/picture61663.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+.nav {
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	height:50px;
+	background-color:#fff;
 }
 
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+.nav ul {
+	margin:0;
+	padding:0;
+}
+
+.nav ul li {
+	width:100px;
+	display:table-cell;
+	line-height:50px;
+	font-weight:bold;
+	background-color:#fff;
+	text-align: center;
+}
+
+.nav ul li:hover, .nav ul li.active {
+	background-color:#003bb3;
+	color:#fff;
+}
+.nav ul li:hover {
+	cursor: pointer;
+}
+
+.brand {
+	float:left;
+	font-family: 'Tangerine', serif;
+	font-size:37px;
+	border-right: 1px dashed #ccc;
+	padding-top:5px;
+	margin-right:5px;
+	padding-right:30px;
+	padding-left:30px;
+}
+
+.nav ul li.brand:hover {
+	background-color:#fff;
+	color:#000;
+	cursor: auto;
+}
+
+.nav-container {
+	float:left;
 }
