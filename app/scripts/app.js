@@ -41,8 +41,18 @@ angular.module('joyceSegalWeddingApp', ['ui.router'])
 			{label: 'Our Story',	sref: 'our-story'},
 		];
 
-		$rootScope.selectNav = function(item) {
+		$rootScope.selectNav = function(item, hideNav) {
 			$rootScope.selectedNav = item.sref;
+			if(hideNav === true) {
+				$rootScope.mobileNavVisible = false;
+			}
+		}
+
+		$rootScope.mobileNavVisible = false;
+
+		$rootScope.toggleNav = function() {
+			$rootScope.mobileNavVisible = !$rootScope.mobileNavVisible;
+			console.log('mobileNavVisible', $rootScope.mobileNavVisible);
 		}
 
 	}]);

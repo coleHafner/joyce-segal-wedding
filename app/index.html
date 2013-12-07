@@ -54,11 +54,19 @@
 					<h1>Chris And Ava</h1>
 				</div>
 				<div class="nav-container">
-					<ul>
+					<ul class="nav-desktop">
 						<li id="{{ item.sref }}" ng-click="selectNav(item)" ng-repeat="item in nav" ng-class="{'active': item.sref == selectedNav }" ui-sref="{{ item.sref }}">
 							{{ item.label }}
 						</li>
 					</ul>
+					<ul class="nav-mobile" ng-show="mobileNavVisible">
+						<li id="{{ item.sref }}" ng-click="selectNav(item, true)" ng-repeat="item in nav" ng-class="{'active': item.sref == selectedNav }" ui-sref="{{ item.sref }}">
+							{{ item.label }}
+						</li>
+					</ul>
+				</div>
+				<div class="nav-trigger">
+					<i class="glyphicon glyphicon-align-justify" ng-click="toggleNav()"></i>
 				</div>
 			</div>
 		</div>
