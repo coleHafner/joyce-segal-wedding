@@ -49,6 +49,7 @@ angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 
 		$rootScope.selectNav = function(item, hideNav) {
 			$rootScope.selectedNav = item.sref;
+			document.title = item.label + ' | joycesegalwedding.com';
 			if(hideNav === true) {
 				$rootScope.mobileNavVisible = false;
 			}
