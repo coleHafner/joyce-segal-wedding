@@ -1,0 +1,16 @@
+<h1>Wedding Details</h1>
+
+<div class="desktop top-margin">
+	<tabset>
+		<tab ng-repeat="tab in tabs" active="tab.active" heading="{{ tab.title }}" select="activateTab(tab)">
+			<div class="padder-10" ng-include="'views/details/' + tab.page + '.html'"></div>
+		</tab>
+	</tabset>
+</div>
+
+<div class="mobile">
+	<div ng-repeat="tab in tabs">
+		<h4>{{ tab.title }}</h4>
+		<div ng-include="'views/details/' + tab.page + '.html'"></div>
+	</div>
+</div>

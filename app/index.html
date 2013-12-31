@@ -11,24 +11,27 @@
 		<meta name="viewport" content="width=device-width">
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        	<!-- build:css(.tmp) styles/main.css -->
-			<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-			<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-			<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
-			<link rel="stylesheet" href="styles/main.css">
-        	<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
 
 		<script src="bower_components/jquery/jquery.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
+		<script src="scripts/vendor/ui-bootstrap-tpls-0.7.0.js"></script>
 		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="http://jwpsrv.com/library/8RKObHHrEeOjfCIACrqE1A.js"></script>
 
 		<!-- build:js({.tmp,app}) scripts/scripts.js -->
 			<script src="scripts/app.js"></script>
+			<script src="scripts/controllers/IndexCtrl.js"></script>
 			<script src="scripts/controllers/DetailsCtrl.js"></script>
 			<script src="scripts/controllers/GalleryCtrl.js"></script>
 			<script src="scripts/controllers/RsvpCtrl.js"></script>
-			<script src="scripts/controllers/OurStoryCtrl.js"></script>
+			<script src="scripts/controllers/AboutUsCtrl.js"></script>
 		<!-- endbuild -->
 
 
@@ -49,7 +52,7 @@
 			<div class="content">
 				<div class="padder-10" data-ui-view=""></div>
 			</div>
-			<div class="nav clearfix">
+			<div class="site-nav clearfix">
 				<div class="brand">
 					<h1>Chris And Ava</h1>
 				</div>

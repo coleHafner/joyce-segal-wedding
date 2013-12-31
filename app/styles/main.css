@@ -13,31 +13,46 @@ html, body {
 	background-size: cover;
 }
 
+p {
+	padding-top:10px;
+	line-height: 20px;
+}
+
+h1 {
+	padding:0;
+	margin:0;
+	font-family: 'Tangerine', serif;
+	font-size:37px;
+	margin-bottom:50px;
+}
+
 .content {
 	position:relative;
 	width:1080px;
 	margin:auto;
-	margin-top:50px;
-	background-color: rgba(255,255,255,.7);
+	margin-top:30px;
+	background-color: #fff;
 	min-height: 500px;
 	border-radius: 7px;
+	margin-bottom: 50px;
 }
 
-.nav {
+.site-nav {
 	position:fixed;
 	left:0;
 	right:0;
 	bottom:0;
 	height:50px;
 	background-color:#fff;
+	border-top:1px dashed #ccc;
 }
 
-.nav ul{
+.site-nav ul{
 	margin:0;
 	padding:0;
 }
 
-.nav ul li {
+.site-nav ul li {
 	width:100px;
 	display:table-cell;
 	line-height:50px;
@@ -46,7 +61,7 @@ html, body {
 	text-align: center;
 }
 
-.nav ul li:hover, .nav ul li.active {
+.site-nav ul li:hover, .site-nav ul li.active {
 	background-color:#003bb3;
 	color:#fff;
 	cursor: pointer;
@@ -88,13 +103,6 @@ html, body {
 	padding:10px;
 }
 
-h1 {
-	padding:0;
-	margin:0;
-	font-family: 'Tangerine', serif;
-	font-size:37px;
-}
-
 .nav-trigger {
 	line-height: 50px;
 	width:50px;
@@ -109,27 +117,83 @@ h1 {
 	cursor:pointer;
 }
 
+.desktop {
+	display:block;
+}
+
+.mobile {
+	display:none;
+}
+
+.top-margin {
+	margin-top:30px;
+}
+
 @media (max-width:1080px) {
 	.content {
 		margin-top:10px;
 		width:100%;
 	}
 
-	html, body {
-		background:none;
-		background-image: none;
-		background-color:#ccc;
+	.desktop {
+		display:block;
 	}
+
+	.mobile {
+		display:none;
+	}
+
+}
+
+@media (max-width:780px) {
 
 	.nav-desktop {
 		display:none;
 	}
 
-	.nav {
-		border-top:1px dashed #ccc;
-	}
-
 	.nav-trigger {
 		display:block;
+	}
+
+	.desktop {
+		display:block;
+	}
+
+	.none {
+		display:none;
+	}
+}
+
+@media (max-width:500px) {
+	.content {
+		min-height: 0;
+	}
+
+	.desktop {
+		display:none;
+	}
+
+	.mobile {
+		display:block;
+	}
+
+	.desktop {
+		display:none;
+	}
+
+	.none {
+		display:block;
+	}
+
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+		padding-bottom:10px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	h4 {
+		background-color:#ccc;
+		padding:10px;
 	}
 }

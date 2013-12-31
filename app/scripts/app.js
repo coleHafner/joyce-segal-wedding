@@ -1,14 +1,19 @@
 'use strict';
 
-angular.module('joyceSegalWeddingApp', ['ui.router'])
+angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 	.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlStateProvider) {
 
-		$urlStateProvider.otherwise('details/');
+		$urlStateProvider.otherwise('/');
 
 		$stateProvider
+			.state('index', {
+				url: '/',
+				templateUrl: 'views/index.html',
+				controller: 'IndexCtrl'
+			})
 			.state('details', {
-				url: '/details/',
-				templateUrl: 'views/details.html',
+				url: '/details/:type',
+				templateUrl: 'views/details/index.html',
 				controller: 'DetailsCtrl'
 			})
 			.state('rsvp', {
@@ -21,10 +26,10 @@ angular.module('joyceSegalWeddingApp', ['ui.router'])
 				templateUrl: 'views/gallery.html',
 				controller: 'GalleryCtrl'
 			})
-			.state('our-story', {
-				url: '/our-story/',
-				templateUrl: 'views/our-story.html',
-				controller: 'OurStoryCtrl'
+			.state('about-us', {
+				url: '/about-us/',
+				templateUrl: 'views/about-us.html',
+				controller: 'AboutUsCtrl'
 			})
 		}])
 
@@ -35,10 +40,11 @@ angular.module('joyceSegalWeddingApp', ['ui.router'])
 		}, 500);
 
 		$rootScope.nav = [
+			{label: 'Home',			sref: 'index'},
 			{label: 'Details',		sref: 'details'},
 			{label: 'RSVP',			sref: 'rsvp'},
 			{label: 'Gallery',		sref: 'gallery'},
-			{label: 'Our Story',	sref: 'our-story'},
+			{label: 'About Us',		sref: 'about-us'},
 		];
 
 		$rootScope.selectNav = function(item, hideNav) {
@@ -52,7 +58,6 @@ angular.module('joyceSegalWeddingApp', ['ui.router'])
 
 		$rootScope.toggleNav = function() {
 			$rootScope.mobileNavVisible = !$rootScope.mobileNavVisible;
-			console.log('mobileNavVisible', $rootScope.mobileNavVisible);
 		}
 
 	}]);
