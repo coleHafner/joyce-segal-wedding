@@ -49,14 +49,27 @@ a {
 	margin-top:15px;
 }
 
+.byline {
+	padding:5px;
+	text-align: center;
+	color:#bbb;
+}
+
+.byline a {
+	color:#bbb;
+}
+
 .content {
 	position:relative;
-	width:1080px;
-	margin:auto;
-	margin-top:30px;
 	background-color: #fff;
 	min-height: 500px;
 	border-radius: 7px;
+}
+
+.content-wrapper {
+	max-width:1080px;
+	margin:auto;
+	margin-top:30px;
 	margin-bottom: 50px;
 }
 
@@ -174,7 +187,7 @@ a {
 }
 
 .polaroid img {
-	width:350px;
+	width:450px;
 }
 
 .pull-left, .pull-left-margin {
@@ -182,7 +195,7 @@ a {
 }
 
 .pull-left-margin {
-	margin-left:10px;
+	margin-left:20px;
 }
 
 .padding-bottom {
