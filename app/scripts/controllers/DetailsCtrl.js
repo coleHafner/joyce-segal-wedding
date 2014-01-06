@@ -3,9 +3,10 @@ angular.module('joyceSegalWeddingApp')
 
 		$scope.tabs = [
 			{title: 'Overview',			page: 'overview',		active: $stateParams.type === 'overview'},
+			{title: 'Schedule',			page: 'schedule',		active: $stateParams.type == 'schedule'},
 			{title: 'Venue',			page: 'venue',			active: $stateParams.type === 'venue'},
 			{title: 'Accomodations',	page: 'accomodations',	active: $stateParams.type === 'accomodations'},
-			{title: 'Rehersal Dinner',	page: 'dinner',			active: $stateParams.type === 'dinner'},
+			{title: 'Registry',			page: 'registry',		active: $stateParams.type === 'registry'}
 		];
 
 		$scope.activateTab = function(tab) {

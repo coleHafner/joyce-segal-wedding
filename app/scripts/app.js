@@ -23,7 +23,7 @@ angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 			})
 			.state('gallery', {
 				url: '/gallery/',
-				templateUrl: 'views/gallery.html',
+				templateUrl: 'views/gallery.html?v=20140105',
 				controller: 'GalleryCtrl'
 			})
 			.state('about-us', {
@@ -49,7 +49,9 @@ angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 
 		$rootScope.selectNav = function(item, hideNav) {
 			$rootScope.selectedNav = item.sref;
-			document.title = item.label + ' | joycesegalwedding.com';
+			var title = typeof item.label != 'undefined' ? item.label : 'Home';
+			document.title = title + ' | joycesegalwedding.com';
+
 			if(hideNav === true) {
 				$rootScope.mobileNavVisible = false;
 			}
