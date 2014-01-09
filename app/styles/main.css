@@ -53,10 +53,12 @@ a {
 	padding:5px;
 	text-align: center;
 	color:#bbb;
+	font-size:11px;
 }
 
 .byline a {
 	color:#bbb;
+	font-size:11px;
 }
 
 .content {
