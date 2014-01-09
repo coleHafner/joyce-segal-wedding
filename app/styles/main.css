@@ -189,7 +189,11 @@ a {
 }
 
 .polaroid img {
-	width:450px;
+	width:100%;
+}
+
+.polaroid-offset {
+	padding-right: 20px;
 }
 
 .pull-left, .pull-left-margin {
@@ -198,6 +202,11 @@ a {
 
 .pull-left-margin {
 	margin-left:20px;
+}
+
+.pull-left-half {
+	float:left;
+	width:50%;
 }
 
 .padding-bottom {
@@ -209,6 +218,10 @@ a {
 	font-size:11px;
 }
 
+.directions-list ul {
+	margin:-10px;
+	padding:0;
+}
 
 @media (max-width:1080px) {
 	.content {
@@ -251,9 +264,18 @@ a {
 	#mobile-video {
 		display:block;
 	}
+
+	.pull-left-half {
+		float: none;
+		width:100%;
+	}
+
+	.polaroid-offset {
+		padding:0;
+	}
 }
 
-@media (max-width:500px) {
+@media (max-width:694px) {
 	.content {
 		min-height: 350px;
 	}
