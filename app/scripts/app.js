@@ -36,7 +36,19 @@ angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 	.run(['$rootScope', '$state', '$timeout', function($rootScope, $state, $timeout) {
 
 		$timeout(function() {
-			$rootScope.selectNav({sref:$state.current.name});
+
+			//put together title
+			var name = $state.current.name,
+				parts = name.split('-'),
+				labelParts = [];
+
+			for(var i = 0; i < parts.length; i++) {
+				labelParts.push(parts[i].charAt(0).toUpperCase() + parts[i].substr(1));
+			}
+
+			var label = labelParts.join(' ');
+			$rootScope.selectNav({label: label, sref:name});
+			
 		}, 500);
 
 		$rootScope.nav = [

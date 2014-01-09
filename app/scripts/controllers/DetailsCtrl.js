@@ -2,11 +2,12 @@ angular.module('joyceSegalWeddingApp')
 	.controller('DetailsCtrl', ['$scope', '$stateParams', '$state', function($scope, $stateParams, $state) {
 
 		$scope.tabs = [
-			{title: 'Overview',			page: 'overview',		active: $stateParams.type === 'overview'},
-			{title: 'Schedule',			page: 'schedule',		active: $stateParams.type == 'schedule'},
-			{title: 'Venue',			page: 'venue',			active: $stateParams.type === 'venue'},
-			{title: 'Accomodations',	page: 'accomodations',	active: $stateParams.type === 'accomodations'},
-			{title: 'Registry',			page: 'registry',		active: $stateParams.type === 'registry'}
+			{title: 'Overview',				page: 'overview',		active: $stateParams.type === 'overview'},
+			{title: 'Schedule',				page: 'schedule',		active: $stateParams.type == 'schedule'},
+			{title: 'Venue',				page: 'venue',			active: $stateParams.type === 'venue'},
+			{title: 'Accomodations',		page: 'accomodations',	active: $stateParams.type === 'accomodations'},
+			{title: 'Registry',				page: 'registry',		active: $stateParams.type === 'registry'},
+			{title: 'Seattle Activities',	page: 'activities',		active: $stateParams.type === 'activities'}
 		];
 
 		$scope.activateTab = function(tab) {
