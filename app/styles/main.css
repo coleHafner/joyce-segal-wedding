@@ -223,6 +223,12 @@ a {
 	padding:0;
 }
 
+#desktop-video {
+	margin:auto;
+	width:960px;
+	height:600px;
+}
+
 @media (max-width:1080px) {
 	.content {
 		margin-top:10px;
@@ -237,6 +243,16 @@ a {
 		display:none;
 	}
 
+}
+
+@media (max-width:990px) {
+	#desktop-video {
+		display:none;
+	}
+
+	#mobile-video {
+		display:block;
+	}
 }
 
 @media (max-width:780px) {
@@ -255,14 +271,6 @@ a {
 
 	.mobile {
 		display:none;
-	}
-
-	#desktop-video {
-		display:none;
-	}
-
-	#mobile-video {
-		display:block;
 	}
 
 	.pull-left-half {
