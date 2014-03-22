@@ -1,0 +1,3 @@
+[submodule "app/scripts/vendor/rsvp-client"]
+	path = app/scripts/vendor/rsvp-client
+	url = git@github.com:coleHafner/rsvp-client.git
