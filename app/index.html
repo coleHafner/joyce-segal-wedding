@@ -23,16 +23,8 @@
 		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
-		<!-- build:js({.tmp,app}) scripts/scripts.js -->
-		<script src="scripts/app.js"></script>
-		<script src="scripts/controllers/IndexCtrl.js"></script>
-		<script src="scripts/controllers/DetailsCtrl.js"></script>
-		<script src="scripts/controllers/GalleryCtrl.js"></script>
-		<script src="scripts/controllers/RsvpCtrl.js"></script>
-		<script src="scripts/controllers/AboutUsCtrl.js"></script>
-		<!-- endbuild -->
-
 		<script type="text/javascript">
+			VIEW_VERSION = 2;
 
 			function doResize() {
 				var newHeight = $(window).height() - 120;
@@ -48,6 +40,15 @@
 			});
 
 		</script>
+
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers/IndexCtrl.js"></script>
+		<script src="scripts/controllers/DetailsCtrl.js"></script>
+		<script src="scripts/controllers/GalleryCtrl.js"></script>
+		<script src="scripts/controllers/RsvpCtrl.js"></script>
+		<script src="scripts/controllers/AboutUsCtrl.js"></script>
+		<!-- endbuild -->
 
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 

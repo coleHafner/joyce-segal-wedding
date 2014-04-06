@@ -8,27 +8,27 @@ angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 		$stateProvider
 			.state('index', {
 				url: '/',
-				templateUrl: 'views/index.html',
+				templateUrl: 'views/index.html?v=' + VIEW_VERSION,
 				controller: 'IndexCtrl'
 			})
 			.state('details', {
 				url: '/details/:type',
-				templateUrl: 'views/details/index.html',
+				templateUrl: 'views/details/index.html?v=' + VIEW_VERSION,
 				controller: 'DetailsCtrl'
 			})
 			.state('rsvp', {
 				url: '/rsvp/',
-				templateUrl: 'views/rsvp/rsvp.html',
+				templateUrl: 'views/rsvp/rsvp.html?v=' + VIEW_VERSION,
 				controller: 'RsvpCtrl'
 			})
 			.state('gallery', {
 				url: '/gallery/',
-				templateUrl: 'views/gallery.html?v=20140105',
+				templateUrl: 'views/gallery.html?v=' + VIEW_VERSION,
 				controller: 'GalleryCtrl'
 			})
 			.state('about-us', {
 				url: '/about-us/',
-				templateUrl: 'views/about-us.html',
+				templateUrl: 'views/about-us.html?v=' + VIEW_VERSION,
 				controller: 'AboutUsCtrl'
 			})
 		}])
