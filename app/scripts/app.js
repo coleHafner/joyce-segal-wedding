@@ -48,7 +48,7 @@ angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 
 			var label = labelParts.join(' ');
 			$rootScope.selectNav({label: label, sref:name});
-			
+
 		}, 500);
 
 		$rootScope.nav = [
@@ -60,7 +60,9 @@ angular.module('joyceSegalWeddingApp', ['ui.router', 'ui.bootstrap'])
 		];
 
 		$rootScope.selectNav = function(item, hideNav) {
-			$rootScope.selectedNav = item.sref;
+
+			var selected = item.hasOwnProperty('sref') ? item.sref : item;
+			$rootScope.selectedNav = selected;
 			var title = typeof item.label != 'undefined' ? item.label : 'Home';
 			document.title = title + ' | joycesegalwedding.com';
 
