@@ -213,6 +213,10 @@ a {
 	padding-bottom: 10px;
 }
 
+.pad-top {
+	padding-top: 15px;
+}
+
 .small-link {
 	text-decoration: none;
 	font-size:11px;
@@ -260,6 +264,55 @@ ul.hotels li {
 	display:none;
 }
 
+.registry {
+	margin:auto;
+	width:300px;
+	display:block;
+	margin-top:75px;
+}
+
+.registry img {
+	margin:auto;
+}
+
+.center {
+	text-align:center;
+}
+
+.pad-top {
+	padding-top:15px;
+}
+
+.macys-logo {
+	padding-top: 38px;
+}
+
+.act-list {
+	margin:0;
+	padding:0;
+}
+
+.act-list li.ol {
+	list-style: none;
+}
+
+.act-list li.act-title {
+	font-weight:bold;
+}
+
+.act-list > li {
+	list-style: none;
+}
+
+.act-list > li > ul {
+	margin-bottom: 20px;
+}
+
+.act-list a {
+	color: #0480be;
+	text-decoration: underline;
+}
+
 @media (max-width:1080px) {
 	.content {
 		margin-top:10px;
@@ -286,6 +339,11 @@ ul.hotels li {
 }
 
 @media (max-width:780px) {
+
+	.registry, .macys-logo {
+		padding-top:0;
+		margin-top:10px;
+	}
 
 	.mobile-link {
 		display:block;
@@ -318,6 +376,7 @@ ul.hotels li {
 }
 
 @media (max-width:694px) {
+
 	.content {
 		min-height: 350px;
 	}
