@@ -240,6 +240,8 @@ ul.hotels b.hotel {
 
 ul.hotels {
 	list-style: none;
+	padding:0;
+	margin-left:25px;
 }
 
 ul.hotels li {
@@ -311,6 +313,19 @@ ul.hotels li {
 .act-list a {
 	color: #0480be;
 	text-decoration: underline;
+}
+
+.shuttle-sched {
+	margin-left: 25px;
+	margin-top:10px;
+}
+
+.shuttle-sched table {
+	margin-bottom: 30px;
+}
+
+.shuttle-sched table td.t {
+	width:100px;
 }
 
 @media (max-width:1080px) {
